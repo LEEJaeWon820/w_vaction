@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+void main()
+{
+	int x, y, z;
+	int result = 0;
+	printf("세 정수를 입력해주세요: ");
+	scanf_s("%d %d %d", &x, &y, &z);
+
+	result = (x + y) * (x + z) / (y % z);
+
+	printf("결과는 : %d", result);
+}
+
+////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+void main()
+{
+	int x, y;
+
+	printf("두 수를 입력해주세요: ");
+	scanf_s("%d %d", &x, &y);
+
+	x < y ? printf("%d", x) : printf("%d", y);
+}
+
+////////////////////////////////////////////////////////
+
+
+#include <stdio.h>
+
+void main()
+{
+	int a, b, c;
+
+	printf("정수 세개를 입력해주세요: ");
+	scanf_s("%d %d %d", &a, &b, &c);
+
+	a > b ? a > c ? printf("%d", a) : printf("%d", c) : b>c ? printf("%d", b) : printf("%d", c);
+}
+
+
+////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+void main()
+{
+	int a, b, c;
+
+	printf("정수 세개를 입력해주세요: ");
+	scanf_s("%d %d %d", &a, &b, &c);
+
+	a > b ? a > c ? printf("%d", a) : printf("%d", c) : b>c ? printf("%d", b) : printf("%d", c);
+}
+
+////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+int main() 
+{
+    float exchange_rate = 1449.47;
+    float usd_amount, krw_amount;
+
+
+    printf("달러 금액을 입력하세요: ");
+    scanf_s("%f", &usd_amount);
+
+
+    krw_amount = usd_amount * exchange_rate;
+
+
+    printf("%.2f 달러는 %.2f 원입니다.\n", usd_amount, krw_amount);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+int main() 
+{
+    int hour, minute, second;
+    int total_seconds;
+
+    printf("현재 시각을 입력하세요 ");
+    scanf_s("%d %d %d", &hour, &minute, &second);
+
+    total_seconds = (hour * 3600) + (minute * 60) + second;
+
+    printf("오늘 00시 00분 00초 기준으로 %d초가 흘렀습니다. \n", total_seconds);
+
+    return 0;
+}
